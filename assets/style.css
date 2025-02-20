@@ -186,3 +186,17 @@ footer nav ul {
 	margin: 2em
 }
 
+/* login  */
+
+.container {
+    text-align: center;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    
+}
+
+.error {
+    color: red;
+    display: none;
+}
