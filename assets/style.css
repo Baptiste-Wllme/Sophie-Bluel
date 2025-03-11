@@ -234,6 +234,17 @@ footer nav ul {
 
 /* CSS sur le projet index */
 
+.project-modif {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
+}
+
+.title-myproject {
+	grid-column-start: 3;
+	grid-column-end: 4;
+
+}
+
 .categories {
 	display: flex;
 	justify-content: center;
@@ -310,22 +321,16 @@ footer nav ul {
 	cursor: pointer;
   }
   
-#openModalBtn.buttonSelected,
-#openModalBtn.buttonNoSelected {                     /* Pour supprimer tout style ajouté */
-    background-color: initial !important;            /* Remet le fond à son état normal */
-    color: initial !important;                       /* Remet la couleur à l’état normal */
-    border: initial !important;
-}
-
 .ModalBtn {
 	border: initial !important;
 	background-color: initial !important;
 	color: initial !important;
 	cursor: pointer;
 	position: relative;
-	left: 700px;
-	bottom: 50px;
 	font-family: "Work sans";
+	justify-self: left;
+	bottom: 10px;
+	
 }
  .modal-gallery {
 	display: grid;
@@ -497,6 +502,19 @@ input[type="file"] {
 	background-color: #A7A7A7;
     font-size: 14px;
     
+    text-align: center;
+	font-family: "Syne";
+	border: 1px solid #ccc;
+}
+
+.validation-button-on {
+	display: inline-block;
+    padding: 8px 60px;
+    border-radius: 20px;
+    color: #ffffff;
+	background-color: #1D6154;
+    font-size: 14px;
+    cursor: pointer;
     text-align: center;
 	font-family: "Syne";
 	border: 1px solid #ccc;

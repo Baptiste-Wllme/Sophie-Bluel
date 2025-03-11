@@ -36,15 +36,17 @@
 		</article>
 	</section>
 	<section id="portfolio">
-		<h2>Mes Projets</h2>
-		<button id="openModalBtn" class="ModalBtn">🖋 Modifier </button> <!-- Bouton pour ouvrir la modale -->
+		<div class="project-modif">
+			<h2 class="title-myproject">Mes Projets</h2>
+			<button id="openModalBtn" class="ModalBtn">🖋 Modifier </button> <!-- Bouton pour ouvrir la modale -->
+		</div>
+		
 		<div id="filters" class="categories">
-			
 		</div>
 		
 		<div id="gallery" class="gallery">
-			
 		</div>
+
 	</section>
 	<section id="contact">
 		<h2>Contact</h2>
@@ -82,10 +84,13 @@
 							</svg>
 							<img id="imagePreview" src="" alt="Aperçu de l'image" style="display: none;">
 						</div>
+
 						<input type="file" id="imageUpload" name="image" accept="image/*" required hidden>
 						<label for="imageUpload" id="addPhoto" class="upload-button">+ Ajouter photo</label>
 						<p class="file-info" id="Size-img">.jpg, .png : 4mo max</p>
+
 					</div>
+
         	        <label for="title">Titre </label>
         	        <input type="text" id="titleInput" name="title" required>
 
@@ -96,7 +101,9 @@
         	            <option value="2">Appartements</option>
         	            <option value="3">Hôtels & Restaurants</option>
         	        </select>
+
 					<div class="split2"></div>
+
         	        <button type="submit" class="validation-button-off">Valider</button>
         	    </form>
         	    <button id="backToGalleryBtn" class="arrow">←</button>
