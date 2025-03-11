@@ -266,43 +266,13 @@ validateButton.addEventListener("click", function (event) {
     event.preventDefault();                                   // Empêche le rechargement de la page
 
     const imageSrc = imagePreview.src;
-    const title = titleInput.value.trim();
+   
     const category = categorySelect.options[categorySelect.selectedIndex].text;
 
-    if (imageSrc && title && category) {
-                                                                // Création d'un nouvel élément projet
-        const projectItem = document.createElement("div");
-        
+    
 
-                                                           
-        const img = document.createElement("img");               // Ajout de l'image
-        img.src = imageSrc;
-        img.alt = title;
-        projectItem.appendChild(img);
+    
 
-        
-        const titleElement = document.createElement("p");             // Ajout du titre
-        titleElement.textContent = title;
-        projectItem.appendChild(titleElement);
-
-        
-        const categoryElement = document.createElement("span");      // Ajout de la catégorie
-        categoryElement.textContent = category;
-        projectItem.appendChild(categoryElement);
-
-        
-        projectGallery.appendChild(projectItem);                    // Ajout à la galerie
-
-        
-        imagePreview.src = "";                                   // Réinitialisation du formulaire
-        imagePreview.style.display = "none";
-        previewIcon.style.display = "block";                     // Réaffiche l’icône
-        titleInput.value = "";
-        categorySelect.value = "";
-        checkFormCompletion();                                   // Désactive le bouton valider après soumission
-
-        modal.style.display = "none";  // Ferme le modal
-    }
   const imageInput = document.getElementById("imageUpload");
   const titleInput = document.getElementById("titleInput");
   const categoryInput = document.getElementById("category");
